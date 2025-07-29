@@ -87,3 +87,9 @@ body.show-mobile-menu .navbar .nav-menu {
         width:100%;
     }
 }
+.testimonials-section .slider-wrapper {
+    margin: 0 0 30px;
+}
+.testimonials-section .swiper-slide-button {
+    display: none;
+}

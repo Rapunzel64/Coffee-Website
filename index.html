@@ -6,6 +6,8 @@
     <title>Coffee </title>
     <link rel="stylesheet" href="css-file/style.css">
     <link rel="stylesheet" media="screen and (max-width:1024px)" href="css-file/phone.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat&family=DM+Serif+Display:ital@1&family=Savate:ital,wght@0,200..900;1,200..900&family=Signika:wght@300..700&family=Special+Gothic+Expanded+One&display=swap');
@@ -116,8 +118,52 @@
                 </ul>
             </div>
         </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+           <h2 class="section-title">Testiminials</h2> 
+           <div class="section-content">
+            <div class="slider-container swiper">
+                <div class="slider-wrapper">
+                    <ul class="testimonials-list swiper-wrapper">
+                        <li class="testimonial swiper-slide">
+                            <img src="testimonial-img/user1.jpeg" alt="User" class="user-image">
+                            <h3 class="name">Robert Joseph</h3>
+                            <i class="feedback">"Loved the French roast. Perfectly balanced and rich. Will order again."</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="testimonial-img/user2.jpeg" alt="User" class="user-image">
+                            <h3 class="name">Sarah Johnson</h3>
+                            <i class="feedback">"Great Espresso blend! Smooth and bold flavor. Fast shipping too!"</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="testimonial-img/user3.jpeg" alt="User" class="user-image">
+                            <h3 class="name">Emily Harris</h3>
+                            <i class="feedback">"Excellent quality! fresh beans and quick delivery. Highly recommended".</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="testimonial-img/user4.jpeg" alt="User" class="user-image">
+                            <h3 class="name">James Wilson</h3>
+                            <i class="feedback">"Fantastic mocha flavor.Fresh and aromatic. Quick shipping."</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="testimonial-img/user5.jpeg" alt="User" class="user-image">
+                            <h3 class="name">Anthony Thompson</h3>
+                            <i class="feedback">"Best decaf I've tried! Smooth and flavorful. Arrived Promptly."</i>
+                        </li>
+                    </ul>
+                    
+                    <div class="swiper-pagination swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+           </div>
+        </section>
     </main>
 
+    <!-- swipper script -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

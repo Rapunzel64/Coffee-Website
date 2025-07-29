@@ -29,7 +29,7 @@ img {
 }
 .section-title {
     text-align: center;
-    padding: 20px 0 40px;
+    padding: 60px 0 100px;
     text-transform: uppercase;
     font-size: 30px;
 }
@@ -221,4 +221,50 @@ header .navbar {
 }
 .menu-section .menu-list .menu-item ,text {
     font-size: 15px;
+}
+
+/*testimonials section*/
+.testimonials-section {
+    padding: 50px 0 100px;
+    background-color: rgb(245, 222, 219);
+}
+.testimonials-section .slider-wrapper {
+    overflow: hidden;
+    margin: 0 60px 50px;
+}
+.testimonials-section .testimonial {
+    display: flex;
+    padding: 35px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.testimonials-section .testimonial .user-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+.testimonials-section .testimonial .name {
+    font-size: medium;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.testimonials-section .testimonial .feedback {
+    line-height: 25px;
+}
+.testimonials-section .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    background-color: rgb(244, 125, 52);
+}
+.testimonials-section .swiper-slide-button {
+    margin-top: -50px;
+    background-color: rgb(244, 125, 52);
+    transition: 0.3s ease;
+}
+.testimonials-section .swiper-slide-button:hover {
+    background-color: black;
 }
