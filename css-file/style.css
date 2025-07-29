@@ -65,7 +65,12 @@ header .navbar {
     color: white;
     background-color: orange;
 }
+.navbar #menu-close-button,
+.navbar #menu-open-button {
+    display: none;
+}
 
+/*hero section*/
 .hero-section {
     min-height: 100vh;
     background-color: rgb(75, 10, 10);

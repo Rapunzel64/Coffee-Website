@@ -1,10 +1,58 @@
-header .navbar {
+.navbar .nav-menu {
+    display: block;
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    padding-top: 100px;
+    background: white;
+    transition: left 0.2s ease;
 }
-header .navbar {
-    flex-direction: column;
+body.show-mobile-menu header {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    background: rgb(0, 0, 0, 0.2);
+}
+body.show-mobile-menu .navbar .nav-menu {
+    left: 0;
+}
+.navbar .nav-menu .nav-link {
+    color: black;
+    display: block;
+    margin-top: 17px;
+    font-size: 20px;
+}
+
+.navbar #menu-close-button,
+.navbar #menu-open-button {
+    display: block;
+    font-size: 20px;
+}
+.navbar #menu-close-button {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+.navbar #menu-open-button {
+    color: white;
+}
+
+.hero-section .hero-details {
+    justify-content: center;
+}
+.hero-section .hero-details :is(.subtitle, .description) {
+    width: 100%;
+    font-size: 18px;
+}
+.hero-section .hero-details .buttons {
+    justify-content: center;
 }

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee </title>
     <link rel="stylesheet" href="css-file/style.css">
-    <link rel="stylesheet" media="screen and(max-width:1000px)" href="css-file/phone.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="css-file/phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat&family=DM+Serif+Display:ital@1&family=Savate:ital,wght@0,200..900;1,200..900&family=Signika:wght@300..700&family=Special+Gothic+Expanded+One&display=swap');
     </style>
@@ -17,6 +18,7 @@
                 <h2 class="logo-text">☕ Coffee</h2>
             </a>
             <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Home</a>
                 </li>
@@ -36,6 +38,7 @@
                     <a href="#" class="nav-link">Contact</a>
                 </li>
             </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
         </nav>
     </header>
 
@@ -55,5 +58,7 @@
         </section>
 
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
