@@ -262,9 +262,9 @@ header .navbar {
 }
 .testimonials-section .swiper-slide-button {
     margin-top: -50px;
-    background-color: rgb(244, 125, 52);
     transition: 0.3s ease;
+    color: rgb(244, 125, 52);
 }
 .testimonials-section .swiper-slide-button:hover {
-    background-color: black;
+    color: black;
 }
