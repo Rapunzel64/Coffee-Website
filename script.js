@@ -1,4 +1,5 @@
 const menuOpenButton = document.querySelector("#menu-open-button");
+const navLink = document.querySelector(".nav-menu .nav-link");
 const menuCloseButton = document.querySelector("#menu-close-button");
 menuOpenButton.addEventListener("click", () => {
     /*toggle mobile menu visiblity*/
@@ -8,11 +9,16 @@ menuOpenButton.addEventListener("click", () => {
 /*close menu when the close button is clicked */
 menuCloseButton.addEventListener("click", () => menuOpenButton.click());
 
+/*close menu when the nav link is clicked */
+navLink.forEach(link => {
+  link.addEventListener("click", () =>menuOpenButton.click());
+});
+
 // Initialize Swiper
 const swiper = new Swiper('.slider-wrapper', {
   loop: true,
   grabCursor: true,
-  spaceBetween: 30,
+  spaceBetween: 25,
 
   // If we need pagination
   pagination: {
@@ -28,13 +34,13 @@ const swiper = new Swiper('.slider-wrapper', {
 
   // Responsive breakpoints
   breakpoints: {
-    0: {
+    324: {
         slidesPerView: 1
     },
     768: {
         slidesPerView: 2
     },
-    1024: {
+    1000: {
         slidesPerView: 3
     }
   }
