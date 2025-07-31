@@ -79,12 +79,6 @@ body.show-mobile-menu .navbar .nav-menu {
 .menu-section .menu-list .menu-item .menu-image {
     width: 300px;
 }
-.testimonials-section .slider-wrapper {
-    margin: 0 0 30px;
-}
-.testimonials-section .swiper-slide-button {
-    display: none;
-}
 
 /* gallery section */
 .gallery-section .gallery-list .gallery-item {
@@ -96,22 +90,20 @@ body.show-mobile-menu .navbar .nav-menu {
 
 /* contact section */
 .contact-section .section-content {
+    align-items: center;
     flex-direction: column-reverse;
 }
 .contact-section .contact-form {
     max-width: 100%;
-    text-align: center;
 }
 
 @media screen and (max-width: 650px) {
     .menu-section .menu-list {
         gap: 60px;
     }
-    .menu-section .menu-list .menu-item {
-        width:100%;
-    }
+    .menu-section .menu-list .menu-item,
     .gallery-section .gallery-list .gallery-item {
-        width: 100%;
+        width:100%;
     }
     .footer-section .section-content {
         flex-direction: column;
